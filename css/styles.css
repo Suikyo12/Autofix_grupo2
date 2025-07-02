@@ -46,3 +46,39 @@ hr {
   display: block;
   margin-bottom: 10px;
 }
+
+.autofix-form-wrapper {
+  width: 40rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 991px) and (min-width: 600px) {
+  .autofix-form-wrapper {
+    width: 50rem;
+  }
+}
+@media (max-width: 599px) {
+  .autofix-form-wrapper {
+    width: 90vw;
+    max-width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.pago-container {
+  background-color: #e3f0ff;
+  border: 1px solid #bfc9d1;
+  border-radius: 0.5rem;
+}
+
+.autofix-btn {
+  transition: background 0.2s, color 0.2s;
+}
+.autofix-btn:hover, .autofix-btn:focus {
+  background: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}
